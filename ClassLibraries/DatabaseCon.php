@@ -1,9 +1,14 @@
 <?php
 session_start();
+// define('DB_SERVER','localhost');
+// define('DB_USER','u603429269_maindb');
+// define('DB_PASS' ,'Mennia123');
+// define('DB_NAME', 'u603429269_sonzieOnline');
+
 define('DB_SERVER','localhost');
-define('DB_USER','u603429269_maindb');
-define('DB_PASS' ,'Mennia123');
-define('DB_NAME', 'u603429269_sonzieOnline');
+define('DB_USER','mcgnuser');
+define('DB_PASS' ,'mcgnroot');
+define('DB_NAME', 'sonzie_cv');
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
