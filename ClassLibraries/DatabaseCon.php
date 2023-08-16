@@ -5,7 +5,7 @@ session_start();
 // define('DB_PASS' ,'Mennia123');
 // define('DB_NAME', 'u603429269_sonzieOnline');
 
-define('DB_SERVER','127.0.0.1');
+define('DB_SERVER','localhost');
 define('DB_USER','mcgnuser');
 define('DB_PASS' ,'mcgnroot');
 define('DB_NAME', 'sonzie_cv');
