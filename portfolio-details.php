@@ -110,15 +110,21 @@ if(isset($_GET['id']))
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
+                  <a href="https://cv.sonzie.tech/<?php echo $portDetail['image1']; ?>" target="_blank"> 
                   <img src="<?php echo $portDetail['image1']; ?>" alt="">
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
+                  <a href="https://cv.sonzie.tech/<?php echo $portDetail['image2']; ?>" target="_blank"> 
                   <img src="<?php echo $portDetail['image2']; ?>" alt="">
+                  </a>
                 </div>
 
                 <div class="swiper-slide">
+                  <a href="https://cv.sonzie.tech/<?php echo $portDetail['image3']; ?>" target="_blank"> 
                   <img src="<?php echo $portDetail['image3']; ?>" alt="">
+                  </a>
                 </div>
 
               </div>
@@ -134,6 +140,7 @@ if(isset($_GET['id']))
                 <li><strong>Client</strong>: <?php echo $portDetail['portfolio-client']; ?></li>
                 <li><strong>Project date</strong>: <?php echo $portDetail['portfolio-date-month']; ?> <?php echo $portDetail['portfolio-date-day']; ?>, <?php echo $portDetail['portfolio-date-year']; ?></li>
                 <li><strong>Project URL</strong>: <a href="<?php echo $portDetail['portfolio-url']; ?>" target="_blank"><?php echo $portDetail['portfolio-url-name']; ?></a></li>
+                <li><strong>Technology</strong>: Laravel</li>
               </ul>
             </div>
             <div class="portfolio-description">
