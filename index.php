@@ -378,9 +378,11 @@ if(isset($_POST['submit']))
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".app">App</li>
-              <li data-filter=".card">Card</li>
-              <li data-filter=".web">Web</li>
+              <li data-filter=".app">Single Page Site</li>
+              <li data-filter=".card">Dynamic Site</li>
+              <li data-filter=".web">Static Site</li>
+              <li data-filter=".web">CMS</li>
+              <li data-filter=".web">Portal</li>
             </ul>
           </div>
         </div>
