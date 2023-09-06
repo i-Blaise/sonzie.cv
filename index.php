@@ -380,7 +380,7 @@ if(isset($_POST['submit']))
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".app">2018</li>
               <li data-filter=".card">2019</li>
-              <li data-filter=".web">2020</li>
+              <li data-filter=".11">2020</li>
               <li data-filter=".web">2021</li>
               <li data-filter=".web">2022</li>
               <li data-filter=".web">2023</li>
@@ -396,7 +396,7 @@ if(isset($_POST['submit']))
             $id = $portfolio['id'];
             $url = "portfolio-details.php?id=".$id;
           ?>
-          <div class="col-lg-4 col-md-6 portfolio-item web">
+          <div class="col-lg-4 col-md-6 portfolio-item 11">
             <div class="portfolio-wrap">
               <img src="<?php echo $portfolio['image1']; ?>" class="img-fluid" alt="">
               <div class="portfolio-links">
