@@ -386,6 +386,7 @@ if(isset($_POST['submit']))
               <li data-filter=".web">2023</li>
             </ul>
           </div>
+          <p style="font-style: italic; font-size:smaller; color: red;">*WA: Web Application</p>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
