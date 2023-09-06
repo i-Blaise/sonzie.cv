@@ -378,11 +378,12 @@ if(isset($_POST['submit']))
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".app">Single Page Site</li>
-              <li data-filter=".card">Dynamic Site</li>
-              <li data-filter=".web">Static Site</li>
-              <li data-filter=".web">CMS</li>
-              <li data-filter=".web">Portal</li>
+              <li data-filter=".2018">2018</li>
+              <li data-filter=".2019">2019</li>
+              <li data-filter=".2020">2020</li>
+              <li data-filter=".2021">2021</li>
+              <li data-filter=".2022">2022</li>
+              <li data-filter=".2023">2023</li>
             </ul>
           </div>
         </div>
@@ -395,7 +396,7 @@ if(isset($_POST['submit']))
             $id = $portfolio['id'];
             $url = "portfolio-details.php?id=".$id;
           ?>
-          <div class="col-lg-4 col-md-6 portfolio-item app">
+          <div class="col-lg-4 col-md-6 portfolio-item <?php echo $mainPortDesc['portfolio-date-day']; ?>">
             <div class="portfolio-wrap">
               <img src="<?php echo $portfolio['image1']; ?>" class="img-fluid" alt="">
               <div class="portfolio-links">
