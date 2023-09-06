@@ -395,7 +395,7 @@ if(isset($_POST['submit']))
             $id = $portfolio['id'];
             $url = "portfolio-details.php?id=".$id;
           ?>
-          <div class="col-lg-4 col-md-6 portfolio-item <?php echo $mainPortDesc['portfolio-category']; ?>">
+          <div class="col-lg-4 col-md-6 portfolio-item <?php echo $portfolio['portfolio-category']; ?>">
             <div class="portfolio-wrap">
               <img src="<?php echo $portfolio['image1']; ?>" class="img-fluid" alt="">
               <div class="portfolio-links">
