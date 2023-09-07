@@ -138,7 +138,7 @@ if(isset($_GET['id']))
               <ul>
                 <li><strong>Category</strong>: <?php echo $portDetail['portfolio-category']; ?></li>
                 <li><strong>Client</strong>: <?php echo $portDetail['portfolio-client']; ?></li>
-                <li><strong>Project date</strong>: <?php echo $portDetail['portfolio-date-month']; ?> <?php echo $portDetail['portfolio-date-day']; ?>, <?php echo $portDetail['portfolio-date-year']; ?></li>
+                <li><strong>Release date</strong>: <?php echo $portDetail['portfolio-date-month']; ?>, <?php echo $portDetail['portfolio-date-year']; ?></li>
                 <li><strong>Project URL</strong>: <a href="<?php echo $portDetail['portfolio-url']; ?>" target="_blank"><?php echo $portDetail['portfolio-url-name']; ?></a></li>
                 <li><strong>Technology</strong>: Laravel</li>
               </ul>
