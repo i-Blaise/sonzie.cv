@@ -140,7 +140,7 @@ if(isset($_GET['id']))
                 <li><strong>Client</strong>: <?php echo $portDetail['portfolio-client']; ?></li>
                 <li><strong>Release date</strong>: <?php echo $portDetail['portfolio-date-month']; ?>, <?php echo $portDetail['portfolio-date-year']; ?></li>
                 <li><strong>Project URL</strong>: <a href="<?php echo $portDetail['portfolio-url']; ?>" target="_blank"><?php echo $portDetail['portfolio-url-name']; ?></a></li>
-                <li><strong>Technology</strong>: Laravel</li>
+                <li><strong>Technology</strong>: <?php echo $portDetail['tech']; ?></li>
               </ul>
             </div>
             <div class="portfolio-description">
