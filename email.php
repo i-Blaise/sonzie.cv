@@ -44,7 +44,7 @@ if(isset($_POST['submit']) && $_POST['submit'] == 'submit')
 		$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 	
 		$mail->send();
-		echo 'Message has been sent';
+		// echo 'Message has been sent';
 		?>
 		<script>
     		// window.location = 'http://localhost:8088/sonzie.cv?status=good';
