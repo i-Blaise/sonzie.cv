@@ -1,24 +1,24 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
-use Tegimus\IziToast\Toast;
-require 'vendor/tegimus/php-izitoast/src/Toast.php';
+// ini_set('display_errors', 1);
+// ini_set('display_startup_errors', 1);
+// error_reporting(E_ALL);
+// use Tegimus\IziToast\Toast;
+// require 'vendor/tegimus/php-izitoast/src/Toast.php';
 
 require_once('ClassLibraries/MainClass.php');
 $mainPlug = new mainClass();
 
-$toast = Toast::make();
-// $toast = new Toast();
+// $toast = Toast::make();
+// // $toast = new Toast();
 
-$title = 'Success';
-$message = 'Message Sent. You will hear from me soon!';
-$type = Toast::TYPE_SUCCESS;
-$options = ['progressBar' => true];
+// $title = 'Success';
+// $message = 'Message Sent. You will hear from me soon!';
+// $type = Toast::TYPE_SUCCESS;
+// $options = ['progressBar' => true];
 
-// $toast = new Toast($message);
-//or
-$toast = Toast::make($message, $title, $type, $options);
+// // $toast = new Toast($message);
+// //or
+// $toast = Toast::make($message, $title, $type, $options);
 ?>
 
 <!DOCTYPE html>
@@ -595,7 +595,7 @@ $toast = Toast::make($message, $title, $type, $options);
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form role="form" method="POST" action="email.php" class="php-email-form">
+            <form role="form" method="POST" action="" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -660,7 +660,7 @@ $toast = Toast::make($message, $title, $type, $options);
   <script src="assets/js/main.js"></script> 
 
   <script type="text/javascript" src="assets/js/iziToast.min.js"></script>
-<?php
+<!-- <?php
 if(isset($_GET['status']) && $_GET['status'] == 'good')
 {
 ?>
@@ -669,7 +669,7 @@ if(isset($_GET['status']) && $_GET['status'] == 'good')
   </script>
 <?php
 }
-?>
+?> -->
 
 </body>
 
