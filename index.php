@@ -595,7 +595,7 @@ $toast = Toast::make($message, $title, $type, $options);
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form role="form" method="POST" action="" class="php-email-form">
+            <form role="form" method="POST" action="email.php" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
