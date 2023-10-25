@@ -5,13 +5,17 @@ session_start();
 // define('DB_PASS' ,'Mennia123');
 // define('DB_NAME', 'u603429269_sonzieOnline');
 
+// define('DB_SERVER','localhost');
+// define('DB_USER','mcgnuser');
+// define('DB_PASS' ,'mcgnroot');
+// define('DB_NAME', 'sonzie_cv');
+
 define('DB_SERVER','localhost');
-define('DB_USER','mcgnuser');
-define('DB_PASS' ,'mcgnroot');
+define('DB_USER','root');
+define('DB_PASS' ,'root');
 define('DB_NAME', 'sonzie_cv');
 
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+
 class DataBase
 {
   // public static $con;

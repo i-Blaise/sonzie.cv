@@ -1,24 +1,21 @@
 <?php
+use Tegimus\IziToast\Toast;
+require 'vendor/tegimus/php-izitoast/src/Toast.php';
+
 require_once('ClassLibraries/MainClass.php');
 $mainPlug = new mainClass();
 
-if(isset($_POST['submit']))
-{
-   if(!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['message']))
-   {
-     echo 'good';
-     die();
-    // $result = $mainPlug->saveInput($_POST, $_SESSION['code']);
-    if($result == 'good')
-    {
-		echo "<script>location='http://localhost/hdplus-certificate/certificate/index.php?status=".$_SESSION['code']."'</script>";
-    }
-    // if($result == "good")
-    // {
-    //   print_r($result);
-    // }
-    }
-}
+$toast = Toast::make();
+// $toast = new Toast();
+
+$title = 'Success';
+$message = 'Message Sent. You will hear from me soon!';
+$type = Toast::TYPE_SUCCESS;
+$options = ['progressBar' => true];
+
+// $toast = new Toast($message);
+//or
+$toast = Toast::make($message, $title, $type, $options);
 ?>
 
 <!DOCTYPE html>
@@ -47,6 +44,7 @@ if(isset($_POST['submit']))
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/iziToast.min.css">
 
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -594,7 +592,7 @@ if(isset($_POST['submit']))
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form method="post" role="form" class="php-email-form">
+            <form role="form" method="POST" action="email.php" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Your Name</label>
@@ -618,9 +616,11 @@ if(isset($_POST['submit']))
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-              <div class="text-center"><button type="submit" name="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit" name="submit" value="submit">Send Message</button></div>
             </form>
           </div>
+
+
 
         </div>
 
@@ -654,7 +654,19 @@ if(isset($_POST['submit']))
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script> 
+
+  <script type="text/javascript" src="assets/js/iziToast.min.js"></script>
+<?php
+if(isset($_GET['status']) && $_GET['status'] == 'good')
+{
+?>
+  <script>
+  <?php $toast->render() ?>
+  </script>
+<?php
+}
+?>
 
 </body>
 

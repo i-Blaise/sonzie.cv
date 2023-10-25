@@ -1,0 +1,6 @@
+{
+    "require": {
+        "phpmailer/phpmailer": "^6.8",
+        "tegimus/php-izitoast": "^1.0"
+    }
+}
