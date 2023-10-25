@@ -384,7 +384,7 @@ $toast = Toast::make($message, $title, $type, $options);
               <li data-filter=".portal">Portal WA</li>
               <li data-filter=".single-page">Single-page WA</li>
             </ul>
-          <p style="font-style: italic; font-size:smaller; color: red; position:absolute; margin: 46px 1px 16px 1px;">*WA: Web Application</p>
+          <p id="portfolio-note">*WA: Web Application</p>
           </div>
         </div>
 

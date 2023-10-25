@@ -502,6 +502,25 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+#portfolio-note{
+  font-style: italic; 
+  font-size:smaller; 
+  color: red; 
+  position:absolute; 
+  margin: 46px 1px 16px 1px;
+}
+
+@media only screen and (max-width: 767px) {
+  #portfolio-note{
+    font-style: italic; 
+    font-size:smaller; 
+    color: red; 
+    position:absolute; 
+    margin: 86px 1px 16px 1px;
+  }
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
