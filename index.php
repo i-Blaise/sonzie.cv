@@ -47,7 +47,7 @@ $mainPlug = new mainClass();
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/css/iziToast.min.css">
+  <!-- <link rel="stylesheet" type="text/css" href="assets/css/iziToast.min.css"> -->
 
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -659,7 +659,7 @@ $mainPlug = new mainClass();
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script> 
 
-  <script type="text/javascript" src="assets/js/iziToast.min.js"></script>
+  <!-- <script type="text/javascript" src="assets/js/iziToast.min.js"></script> -->
 <!-- <?php
 if(isset($_GET['status']) && $_GET['status'] == 'good')
 {
