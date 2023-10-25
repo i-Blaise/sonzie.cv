@@ -1,24 +1,24 @@
 <?php
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
-// use Tegimus\IziToast\Toast;
-// require 'vendor/tegimus/php-izitoast/src/Toast.php';
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+use Tegimus\IziToast\Toast;
+require 'vendor/tegimus/php-izitoast/src/Toast.php';
 
 require_once('ClassLibraries/MainClass.php');
 $mainPlug = new mainClass();
 
-// $toast = Toast::make();
-// // $toast = new Toast();
+$toast = Toast::make();
+// $toast = new Toast();
 
-// $title = 'Success';
-// $message = 'Message Sent. You will hear from me soon!';
-// $type = Toast::TYPE_SUCCESS;
-// $options = ['progressBar' => true];
+$title = 'Success';
+$message = 'Message Sent. You will hear from me soon!';
+$type = Toast::TYPE_SUCCESS;
+$options = ['progressBar' => true];
 
-// // $toast = new Toast($message);
-// //or
-// $toast = Toast::make($message, $title, $type, $options);
+// $toast = new Toast($message);
+//or
+$toast = Toast::make($message, $title, $type, $options);
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +47,7 @@ $mainPlug = new mainClass();
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- <link rel="stylesheet" type="text/css" href="assets/css/iziToast.min.css"> -->
+  <link rel="stylesheet" type="text/css" href="assets/css/iziToast.min.css">
 
   <link href="assets/css/style.css" rel="stylesheet">
 
@@ -659,8 +659,8 @@ $mainPlug = new mainClass();
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script> 
 
-  <!-- <script type="text/javascript" src="assets/js/iziToast.min.js"></script> -->
-<!-- <?php
+  <script type="text/javascript" src="assets/js/iziToast.min.js"></script>
+<?php
 if(isset($_GET['status']) && $_GET['status'] == 'good')
 {
 ?>
@@ -669,7 +669,7 @@ if(isset($_GET['status']) && $_GET['status'] == 'good')
   </script>
 <?php
 }
-?> -->
+?>
 
 </body>
 
