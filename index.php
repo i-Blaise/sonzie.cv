@@ -12,7 +12,7 @@ $toast = Toast::make();
 // $toast = new Toast();
 
 $title = 'Success';
-$message = 'Message Sent. You will hear from us soon!';
+$message = 'Message Sent. You will hear from me soon!';
 $type = Toast::TYPE_SUCCESS;
 $options = ['progressBar' => true];
 
